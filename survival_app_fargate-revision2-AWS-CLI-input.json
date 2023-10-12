@@ -1,0 +1,28 @@
+{
+    "family": "survival_app_fargate",
+    "containerDefinitions": [
+        {
+            "name": "Survival_Prediction_Container",
+            "image": "785438258250.dkr.ecr.us-east-1.amazonaws.com/mod7-mp1-survival-prediction",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8001,
+                    "hostPort": 8001,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "executionRoleArn": "arn:aws:iam::785438258250:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "4096"
+}
