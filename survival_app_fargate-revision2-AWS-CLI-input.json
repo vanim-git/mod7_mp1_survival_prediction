@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "Survival_Prediction_Container",
-            "image": "785438258250.dkr.ecr.us-east-1.amazonaws.com/mod7-mp1-survival-prediction",
+            "image": "785438258250.dkr.ecr.us-east-1.amazonaws.com/mod7-mp1-survival-prediction:latest",
             "cpu": 0,
             "portMappings": [
                 {
