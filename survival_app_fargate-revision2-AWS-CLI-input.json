@@ -1,9 +1,9 @@
 {
-    "family": "survival_app_fargate",
+    "family": "sample-fargate",
     "containerDefinitions": [
         {
             "name": "Survival_Prediction_Container",
-            "image": "785438258250.dkr.ecr.us-east-1.amazonaws.com/mod7-mp1-survival-prediction",
+            "image": "472903449543.dkr.ecr.us-east-1.amazonaws.com/mod7-mp1-survival-prediction:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -18,11 +18,11 @@
             "volumesFrom": []
         }
     ],
-    "executionRoleArn": "arn:aws:iam::785438258250:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::472903449543:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "4096",
-    "memory": "16384"
+    "cpu": "1024",
+    "memory": "4096"
 }
